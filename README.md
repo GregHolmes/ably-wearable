@@ -53,4 +53,4 @@ If you have used this as a base for getting started on your own projects or idea
 - [Visit our website](https://ably.com/?utm_source=gitub&utm_medium=repo)
 
 ---
-[![Ably logo](https://static.ably.dev/badge-black.svg)](https://ably.com/?utm_source=gitub&utm_medium=repo)
+[![Ably logo](https://static.ably.dev/badge-black.svg?wearably-demo)](https://ably.com/?utm_source=gitub&utm_medium=repo)
