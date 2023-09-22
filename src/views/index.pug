@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div.container.mt-3
+    div.d-flex.justify-content-center.mb-3
+      form(class="form-message" method="POST" action="/")
+        - var logoClasses = [' mx-auto d-block']
+        img(src='./ably.png' alt='login' style='width:50%; height:50%;' class=logoClasses)
+
+        - var h1Classes = ['h3', 'mb-3', 'font-weight-normal', 'mt-3']
+        h1(class=h1Classes) Please enter your message for the Ably Badge
+
+        if status
+          if status === "success"
+            div.alert.alert-success
+              p Thank you, your message has been posted. Please check the badge for the result!
+          else if status === "error"
+            div.alert.alert-danger
+              p Oh no! It appears there's an error. Your message has not been sent.
+
+        textarea(name="message", rows=3, required, autofocus).form-control
+
+        - var buttonClass=['btn', 'btn-lg', 'btn-primary', 'btn-block', 'mt-4'];
+        button(class=buttonClass type="submit") Send Message
